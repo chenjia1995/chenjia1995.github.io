@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>笔记 | 社会人</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="引入本地图片的方法： 在blog/source目录下新建一个文件夹，名字随意。 将想要导入的图片放入文件夹 md文件里面通过如下方式引入:学习任务：hexo+github搭建个人博客网站学习计划：day01：环境搭建day02：markdown语法day03：个性化定制day04：github托管day05：域名绑定+评论系统一、环境搭建 node：一款流行的web服务器，也是一款服务器端语言">
+<meta name="keywords" content="js.web">
+<meta property="og:type" content="article">
+<meta property="og:title" content="笔记">
+<meta property="og:url" content="http://yoursite.com/2018/05/22/笔记/index.html">
+<meta property="og:site_name" content="社会人">
+<meta property="og:description" content="引入本地图片的方法： 在blog/source目录下新建一个文件夹，名字随意。 将想要导入的图片放入文件夹 md文件里面通过如下方式引入:学习任务：hexo+github搭建个人博客网站学习计划：day01：环境搭建day02：markdown语法day03：个性化定制day04：github托管day05：域名绑定+评论系统一、环境搭建 node：一款流行的web服务器，也是一款服务器端语言">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/123/123.gif">
+<meta property="og:updated_time" content="2018-05-22T08:35:25.180Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="笔记">
+<meta name="twitter:description" content="引入本地图片的方法： 在blog/source目录下新建一个文件夹，名字随意。 将想要导入的图片放入文件夹 md文件里面通过如下方式引入:学习任务：hexo+github搭建个人博客网站学习计划：day01：环境搭建day02：markdown语法day03：个性化定制day04：github托管day05：域名绑定+评论系统一、环境搭建 node：一款流行的web服务器，也是一款服务器端语言">
+<meta name="twitter:image" content="http://yoursite.com/123/123.gif">
+    
+
+    
+        <link rel="alternate" href="/" title="社会人" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/css/images/avatar.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">社会人</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile" class="profile-fixed">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png" />
+            <h2 id="name">社会人</h2>
+            <h3 id="title">一个没节操的社会人</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>成都, 中国</span>
+            <a id="follow" target="_blank" href="https://github.com/ppoffice/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                4
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                0
+                <span>tag</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class=tooltip>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="facebook" class=tooltip>
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class=tooltip>
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class=tooltip>
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            笔记
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/05/22/笔记/">
+            <time datetime="2018-05-22T07:40:27.000Z" itemprop="datePublished">2018-05-22</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="引入本地图片的方法："><a href="#引入本地图片的方法：" class="headerlink" title="引入本地图片的方法："></a>引入本地图片的方法：</h2><ol>
+<li>在blog/source目录下新建一个文件夹，名字随意。</li>
+<li>将想要导入的图片放入文件夹</li>
+<li>md文件里面通过如下方式引入:<br><img src="/123/123.gif" alt="123"><h1 id="学习任务："><a href="#学习任务：" class="headerlink" title="学习任务："></a>学习任务：</h1><h3 id="hexo-github搭建个人博客网站"><a href="#hexo-github搭建个人博客网站" class="headerlink" title="hexo+github搭建个人博客网站"></a>hexo+github搭建个人博客网站</h3><h1 id="学习计划："><a href="#学习计划：" class="headerlink" title="学习计划："></a>学习计划：</h1><h3 id="day01：环境搭建"><a href="#day01：环境搭建" class="headerlink" title="day01：环境搭建"></a>day01：环境搭建</h3><h3 id="day02：markdown语法"><a href="#day02：markdown语法" class="headerlink" title="day02：markdown语法"></a>day02：markdown语法</h3><h3 id="day03：个性化定制"><a href="#day03：个性化定制" class="headerlink" title="day03：个性化定制"></a>day03：个性化定制</h3><h3 id="day04：github托管"><a href="#day04：github托管" class="headerlink" title="day04：github托管"></a>day04：github托管</h3><h3 id="day05：域名绑定-评论系统"><a href="#day05：域名绑定-评论系统" class="headerlink" title="day05：域名绑定+评论系统"></a>day05：域名绑定+评论系统</h3><h1 id="一、环境搭建"><a href="#一、环境搭建" class="headerlink" title="一、环境搭建"></a>一、环境搭建</h1></li>
+<li>node：一款流行的web服务器，也是一款服务器端语言</li>
+</ol>
+<ul>
+<li>安装流程：<a href="https://nodejs.org" target="_blank" rel="noopener">官网</a>下载v8.11.2版本的msi安装包，双击，默认配置安装<h2 id="检测环境："><a href="#检测环境：" class="headerlink" title="检测环境："></a>检测环境：</h2></li>
+</ul>
+<ol>
+<li>win+r打开运行窗口，输入cmd回车</li>
+<li>在新打开的cmd窗口输入nede-v<h2 id="如果能显示版本号v8-11-2则代表本机已经安装了node服务"><a href="#如果能显示版本号v8-11-2则代表本机已经安装了node服务" class="headerlink" title="如果能显示版本号v8.11.2则代表本机已经安装了node服务"></a>如果能显示版本号v8.11.2则代表本机已经安装了node服务</h2><h2 id="目的：提供博客项目运行所需的web服务器"><a href="#目的：提供博客项目运行所需的web服务器" class="headerlink" title="目的：提供博客项目运行所需的web服务器"></a>目的：提供博客项目运行所需的web服务器</h2></li>
+</ol>
+<h2 id="git：版本控制器"><a href="#git：版本控制器" class="headerlink" title="git：版本控制器"></a>git：版本控制器</h2><ul>
+<li>浏览器打开<a href="https://git-scm.com/download/" target="_blank" rel="noopener">官网</a></li>
+<li>版本的msi安装吧，双击，默认配置安装<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2></li>
+</ul>
+<ol>
+<li>win+r打开运行窗口，输入cmd回车</li>
+<li>在新打开的cmd窗口输入git –version</li>
+<li>如果能显示版本号git version2.xxxx则代表本机已经安装了git服务</li>
+<li>如果提示：git不是内部或外部命令，则需要重新安装git<h2 id="常规cmd命令"><a href="#常规cmd命令" class="headerlink" title="常规cmd命令"></a>常规cmd命令</h2></li>
+</ol>
+<ul>
+<li>cd： 改变操作目录(cd以后必须带空格)</li>
+<li>cd ..代表返回上级目录</li>
+<li>/ 代表返回当前盘符的根目录</li>
+<li>cd 文件夹名 代表进入某目录<h2 id="快速、简洁且高效的博客框架"><a href="#快速、简洁且高效的博客框架" class="headerlink" title="快速、简洁且高效的博客框架"></a>快速、简洁且高效的博客框架</h2></li>
+</ul>
+<ol>
+<li>安装hexo脚手架</li>
+<li>win+r打开运行窗口，输入cmd回车</li>
+<li>在新打开的cmd输入：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g回车</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>npm:node的包管理器(类似于Apple store和安卓应用商店)</li>
+<li>提供nobe工具包的安装和卸载服务</li>
+<li>install:导入、安装<h3 id="cli-脚手架"><a href="#cli-脚手架" class="headerlink" title="cli:脚手架"></a>cli:脚手架</h3><h3 id="g-对前面命令的修饰，表示全局安装-在本机任何路径都可以访问"><a href="#g-对前面命令的修饰，表示全局安装-在本机任何路径都可以访问" class="headerlink" title="-g:对前面命令的修饰，表示全局安装(在本机任何路径都可以访问)"></a>-g:对前面命令的修饰，表示全局安装(在本机任何路径都可以访问)</h3><h3 id="初始化博客项目"><a href="#初始化博客项目" class="headerlink" title="初始化博客项目"></a>初始化博客项目</h3></li>
+</ul>
+<ol>
+<li>在命令行cd到需要存放博客项目的路径</li>
+<li>接下来使用如下命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>(ps：blog是项目名称,名字随意,但必须是英文)</li>
+</ul>
+<ol start="3">
+<li><p>进入项目目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装项目依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动服务器，预览</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>简写：hexo s</li>
+</ul>
+<ol start="6">
+<li>预览</li>
+</ol>
+<ul>
+<li>在浏览器地址输入：<h3 id="localhost-4000或者127-0-0-1-4000"><a href="#localhost-4000或者127-0-0-1-4000" class="headerlink" title="localhost:4000或者127.0.0.1:4000"></a>localhost:4000或者127.0.0.1:4000</h3></li>
+</ul>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yoursite.com/2018/05/22/笔记/" data-id="cjhhddx6l0003msjd6qtdq2l2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/05/22/markdown语法/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">markdown语法</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">最近发表</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/22/笔记/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/05/22/笔记/" class="title">笔记</a></p>
+                            <p class="item-date"><time datetime="2018-05-22T07:40:27.000Z" itemprop="datePublished">2018-05-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/22/markdown语法/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/05/22/markdown语法/" class="title">markdown语法</a></p>
+                            <p class="item-date"><time datetime="2018-05-22T03:09:26.000Z" itemprop="datePublished">2018-05-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/22/这是我的第一篇博客/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/05/22/这是我的第一篇博客/" class="title">这是我的第一篇博客</a></p>
+                            <p class="item-date"><time datetime="2018-05-22T02:40:16.000Z" itemprop="datePublished">2018-05-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/21/hello-world/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/05/21/hello-world/" class="title">你好世界！</a></p>
+                            <p class="item-date"><time datetime="2018-05-21T08:28:42.456Z" itemprop="datePublished">2018-05-21</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 nidaye<br>
+            版权所有 <a href="http://www.2345.com/?K879077522/" target="_blank">社会人  </a>. 主题版权 <a href="http://www.baidu.com/">你的名字</a>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
